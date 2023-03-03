@@ -1,0 +1,14 @@
+@charset "UTF-8";
+  
+
+@media screen and (min-width: 768px) {
+
+    #menu{display: none;}
+    header{background-color: rgba(99, 98, 98, 0.336);}
+    nav{background-color: initial; cursor: initial;}
+    nav:hover{background-color: initial;}
+    ul{display: block;}
+    li{display: inline-block; margin-right: -2px;}
+    main{width: 768px; margin-top: 0;}
+}
+

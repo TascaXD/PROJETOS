@@ -1,0 +1,97 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fontemenu: 'Passion One', normal;
+    --fonte3: 'Sriracha', cursive;
+}
+
+section{
+    background-color: black;
+    height: 15em;
+}
+
+.menu{
+    text-align: center;
+    color: white;
+    padding-top: 5vh;
+}
+
+.menu span{
+    font-size: 1.1em;
+    font-family:sans-serif;
+}
+
+h1{
+    font-family: var(--fontemenu);
+    font-size: 8em;
+    font-weight: 100;
+    font-variant: small-caps;
+}
+
+a{text-decoration: none; color: white;}
+a:hover{text-decoration: underline;}
+
+p{
+    margin-top: 1em;
+    font-family:var(--fonte3), serif;
+    font-size: 2.5em;
+    font-weight: 100;
+    padding: 0.7em 0em 0em 0.7em;
+    line-height: 2.3em;
+}
+.girassol{
+    margin-top: 10em;
+    padding: 1em;
+    width: auto;
+    height: 47em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    background-image: url(imagens/background001.jpg);
+    background-attachment: fixed;
+}
+
+
+.girassol p{
+    margin-left: 0.5em;
+    padding-top:0em;
+    width: 14em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+.livros{
+    margin-top: 10em;
+    padding: 1em;
+    width: auto;
+    height: 47em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    background-image: url(imagens/background002.jpg);
+    background-attachment: fixed;
+}
+
+.livros p{
+    padding: 0;
+    margin-left: 0.5em;
+    width: 14em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.521);
+    text-shadow: 1px 1px 0px black;
+}
+
+#margin{padding-bottom: 1em;}
+
+footer{
+    margin-top: 10em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.7em;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, serif;
+}

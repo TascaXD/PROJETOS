@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site MQ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.flaticon.com/br/icone-gratis/menu-aberto_4294414?term=barra+de+menu&page=1&position=1&origin=tag&related_id=4294414">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Site</h1>   
+<nav>
+ <div id="menu"><img id="img" src="menu-aberto.png" alt="Menu Hamburguer"></div>
+    
+                <ul>
+                    <a href="#">
+                        <li>Opção 1</li>
+                    </a>
+                    <a href="#">
+                        <li>Opção 2</li>
+                    </a>
+                    <a href="#">    
+                        <li>Opção 3</li>
+                    </a>
+                    <a href="#">
+                        <li>Opção 4</li>
+                    </a>
+                    <a href="#">
+                        <li>Opção 5</li>
+                    </a>
+                </ul>
+</nav>
+  
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+         
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, temporibus. Doloribus recusandae illo sunt aliquid facilis molestias, sequi natus adipisci necessitatibus atque ducimus amet blanditiis numquam ratione omnis doloremque quae!                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, quibusdam iste. Libero, voluptas sequi. Repellendus ea illum blanditiis fugiat reiciendis placeat ut a autem porro aut deserunt, quibusdam dignissimos aperiam?</p>
+                
+                <p>Lorem, ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis consequuntur eligendi vitae cum veritatis porro, eaque totam similique nulla amet. Quod ea quo unde non quas esse accusantium labore officia? consectetur adipisicing elit. Explicabo, earum vero distinctio nihil facilis quisquam cum sapiente odio molestiae veritatis, in, nam voluptate mollitia esse eveniet perferendis laboriosam id doloribus.</p>
+         
+        </article>
+    </main> 
+</body>
+<script>
+
+let menu = document.querySelector('ul');
+let icon = document.querySelector('#menu');
+
+function toggleMenu() {
+if(menu.style.display === "none"){
+menu.style.display = "block";
+icon.style.backgroundColor = "lightgray";
+} else {
+menu.style.display = "none";
+icon.style.backgroundColor = "initial";
+}
+}
+
+window.addEventListener('resize', function() {
+if (window.innerWidth > 767) {
+menu.style.display = "block";
+icon.removeEventListener('click', toggleMenu);
+} else {
+menu.style.display = "none";
+icon.addEventListener('click', toggleMenu);
+}
+});
+
+</script>
+</html>

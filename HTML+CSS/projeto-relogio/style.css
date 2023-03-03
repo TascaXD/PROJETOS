@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#relogio{
+    background-color: rgba(165, 163, 163, 0.877);
+    width: 45vw;
+    height: 85vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+#branco{
+    background-color: white;
+    border: 1px black solid;
+    width: 38vw;
+    height: 72vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.numbers{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4em;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+      
+}
+.number {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .number:nth-child(1) {
+    transform: translate(-50%, -310%);
+  }
+  .number:nth-child(2) {
+    transform: translate(200%, -280%);
+  }
+  .number.number:nth-child(3) {
+    transform: translate(410%, -200%);
+  }
+  .number.number:nth-child(4) {
+    transform: translate(530%, -65%);
+  }
+  .number.number:nth-child(5) {
+    transform: translate(440%, 80%);
+  }
+  .number.number:nth-child(6) {
+    transform: translate(230%, 180%);
+  }
+  .number.number:nth-child(7) {
+    transform: translate(-55%, 220%);
+  }
+  .number.number:nth-child(8) {
+    transform: translate(-360%, 180%);
+  }
+  .number.number:nth-child(10) {
+    transform: translate(-590%, -50%);
+  }
+  .number.number:nth-child(9) {
+    transform: translate(-540%, 70%);
+}
+.number.number:nth-child(11) {
+    transform: translate(-280%, -180%);
+  }
+  .number.number:nth-child(12) {
+    transform: translate(-180%, -280%);
+  }
+
+  #circulo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+  }
+  
+  #ponteiro1{
+    background-color: black;
+    width: 9em;
+    height: 1em;
+    border-radius: 1em 0em 0em 1em;
+    position: absolute;
+    top: 37.5%;
+    left: 22%;
+    rotate: 35deg;
+  }
+  #ponteiro2{
+    background-color: black;
+    width: 13em;
+    height: 0.9em;
+    border-radius: 1em 0em 0em 1em;
+    position: absolute;
+    top: 38%;
+    left: 47%;
+    rotate: 150deg;
+  }
+  #ponteiro3{
+    background-color: black;
+    width: 10em;
+    height: 0.2em;
+    border-radius: 1em 0em 0em 1em;
+    position: absolute;
+    top: 32%;
+    left: 43%;
+    rotate: 120deg;
+  }
+
+
+
+

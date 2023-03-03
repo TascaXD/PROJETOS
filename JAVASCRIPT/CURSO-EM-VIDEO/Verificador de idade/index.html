@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Verificador de idade</title>
+</head>
+<body>
+
+	<header>
+		<h1>
+			Verificador de Idade
+		</h1>
+	</header>
+
+	<main>
+		<div><span>Ano de Nascimento:</span> 	<input type="number" id="Nascimento"> <br></div>
+		<span>Sexo:</span> <input id="Masculino" type="radio" name="Masculino"	value="Masculino" onclick="Radio()">  <span>Masculino</span>	<input id="Feminino" type="radio" name="Feminino" value="Feminino" onclick="Radio2()"> <span>Feminino</span>
+		<br> <input type="button" value="Verificar" name="Verificar" id="Verificar" onclick="Verificar()">
+		<div id="resultado">
+		<span id="resultado2">Detectamos X com Y anos</span> <br>	</div>
+		<div id="img"><img src="images.jpg" alt="Menina" id="menina" ></div>
+	
+	</main>
+
+	<footer>
+		<p>©TascaXD</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
