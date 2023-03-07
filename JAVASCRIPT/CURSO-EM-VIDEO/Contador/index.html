@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Contador</title>
+</head>
+<body>
+
+	<header>
+		<h1>
+			Vamos contar
+		</h1>
+	</header>
+
+	<main>
+        <section>
+            <span>Inicio:</span>    <input type="number"> <br> <br>
+            <span id="fim">Fim:</span>     <input type="number"> <br> <br>
+            <span>Passos:</span>    <input type="number" min="0" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
+             <br> <br>
+            <input id="button" type="button" value="Contar" onclick="contar()">
+        </section>
+        <p id="contando">Contando:</p>
+        <div id="resultado">
+        </div>
+	</main>
+
+	<footer>
+		<p>©TascaXD</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
