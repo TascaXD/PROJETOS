@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Gerador de senhas</title>
+</head>
+<body>
+
+	<header>
+		<h1>
+			Gerador de senhas
+		</h1>
+	</header>
+
+	<section>
+<div id="checkbox">
+
+<input type="checkbox" class="radio" name="" id="maiuscula" onclick="check()"> <span>Com letras maiúsculas</span><br>
+<input type="checkbox" class="radio" name="" id="minuscula" onclick="check()"> <span>Com letras minúsculas</span> <br>
+<input type="checkbox" class="radio" name="" id="número" onclick="check()"> <span>Com números</span> <br>
+<input type="checkbox" class="radio" name="" id="símbolo" onclick="check()"> <span>Com símbolos</span> <br> <br>
+<span>Tamanho da senha:</span>  <input type="number" name="" id="number" > <span>caractéres</span>  <input type="button" class="button" value="Gerar" id="gerar" onclick="gerar()">
+
+</div>
+
+    <div id="senha">
+ 
+    </div>
+
+    </section>
+
+	<footer>
+		<p>©TascaXD</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
