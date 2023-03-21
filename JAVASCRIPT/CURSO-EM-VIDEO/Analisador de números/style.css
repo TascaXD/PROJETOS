@@ -7,12 +7,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: rgba(49, 129, 250, 0.829);
-}
+    background: linear-gradient(to right,
+    rgb(70, 105, 170),
+    rgb(100, 145, 200),
+    rgb(120, 170, 225),
+    rgb(141, 178, 230),
+    rgb(147, 173, 231));
+     }
 header{
     color: white;
     text-align: center;
     padding: 1.2em;
+}
+header > h1{
+text-shadow: 1px 1px 1px black
 }
 main{
     background-color: white;
